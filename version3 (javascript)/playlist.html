@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="assets/images/logo.jpg" type="image/icon type">
+    <title>Musifyy | Playlists</title>
+    <link rel="stylesheet" href="assets/css/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <a href="homepage.html" class="logo-wrap">
+            <img class="logo" src="assets/images/logo.jpg" alt="" />
+            <h2 id="logo-text">MUSIFYY</h2>
+        </a>
+        <div class="buttons">
+            <form class="search-wrap" id="searchbar">
+                <input type="text" name="search" id="search" placeholder="Search a song..." />
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            <div style="position: relative;">
+                <a class="profile">
+                    <img src="assets/images/avatar.png" alt="">
+                    <p> Omkar </p>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown">
+                    <a href="welcome.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="sidebar">
+            <a href="homepage.html"><i class="fas fa-home"></i>Home</a>
+            <a href="recent.html"><i class="far fa-clock"></i>Recently played</a>
+            <a class="selected" href="playlist.html"><i class="fas fa-list-ul"></i>Playlists</a>
+            <a href="search.html"><i class="fas fa-search"></i>Search</a>
+        </section>
+
+        <section class="content">
+
+            <ul class="all-songs">
+                <li>
+                    <h1 class="cat-title">Your Playlists :</h1>
+                    <ul class="thumbnail-wrap">
+                        <li>
+                            <a href="songs.html" class="thumbnail">
+                                <img class="playlist" src="assets/images/playlist.svg" alt="" />
+                                <h3>Workout</h3>
+                                <h5>4 songs</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="thumbnail">
+                                <img class="playlist" src="assets/images/playlist.svg" alt="" />
+                                <h3>Productivity</h3>
+                                <h5>9 songs</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="thumbnail">
+                                <img class="playlist" src="assets/images/playlist.svg" alt="" />
+                                <h3>Favourites</h3>
+                                <h5>15 songs</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="thumbnail">
+                                <img class="playlist" src="assets/images/playlist.svg" alt="" />
+                                <h3>Liked Songs</h3>
+                                <h5>7 songs</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <footer>
+                <h3>Follow us </h3>
+
+                <div class="icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+
+                <h4>Created by Omkar Dabir</h4>
+            </footer>
+        </section>
+
+    </main>
+
+    <script src="assets/js/homepage.js"></script>
+</body>
+
+</html>

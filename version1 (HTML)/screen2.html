@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Musifyy | Homepage</title>
+</head>
+<style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        border: 2px solid black;
+    }
+    
+    header a {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    header .logo {
+        width: 30px;
+        object-fit: fill;
+        object-position: center;
+        border-radius: 20%;
+        margin: 5px 15px;
+    }
+    
+    .logo-wrap {
+        border-right: 4px solid black;
+        width: 245px;
+    }
+    
+    header .buttons {
+        margin-left: auto;
+    }
+    
+    .buttons button {
+        margin: 12px;
+        margin-left: 0;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    
+    .buttons input {
+        padding: 10px;
+        font-size: 15px;
+        margin: auto 20px;
+        width: 400px;
+    }
+    
+    button:hover {
+        cursor: pointer;
+    }
+    
+    .sidebar {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sidebar a {
+        margin: 20px;
+    }
+    
+    .thumbnail {
+        background-color: grey;
+        width: 300px;
+        display: flex;
+        padding: 15px;
+        list-style: none;
+        margin: 10px 15px;
+    }
+    
+    .content {
+        padding: 20px;
+        border: 2px solid black;
+    }
+    
+    .welcome {
+        padding: 10px;
+        text-align: left;
+    }
+</style>
+
+<body>
+    <header>
+        <a href="homepage.html" class="logo-wrap">
+            <img class="logo" src="logo.jpg" alt="" />
+
+            <h2>MUSIFYY</h2>
+        </a>
+        <div class="buttons">
+            <input type="text" name="search" id="search" placeholder="Search a song..." />
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
+        </div>
+    </header>
+
+    <main style="display: flex">
+        <section class="sidebar" style="width: 300px">
+            <a href="homepage.html">Home</a>
+            <a href="#">Recently played</a>
+            <a href="#">Playlists</a>
+            <a href="#">Search</a>
+        </section>
+
+        <section class="content" style="width: 100%">
+            <div style="display: flex">
+                <img height="180px" src="images/pop.jpg" alt="" />
+                <div style="width: 800px">
+                    <h1 style="font-size: 40px">Pop Music</h1>
+                    <p>
+                        Pop is a genre of popular music that originated in its modern form during the mid-1950s in the United States and the United Kingdom. The terms "popular music" and "pop music" are often used interchangeably, although the former describes all music that
+                        is popular and includes many disparate styles.
+                    </p>
+                </div>
+            </div>
+
+            <ul>
+                <li>
+                    <h3>Trending pop song:</h3>
+                    <ul class="thumbnail-wrap">
+                        <li>
+                            <a href="screen3.html" class="thumbnail">
+                                <img style="margin: 10px" height="50px" src="images/perfect.jpg" alt="" />
+                                <h3>Perfect by Ed Sheeran</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen3.html" class="thumbnail">
+                                <img style="margin: 10px" height="50px" src="images/attention.png" alt="" />
+                                <h3>Attention</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen3.html" class="thumbnail">
+                                <img style="margin: 10px" height="50px" src="images/wolves.jpeg" alt="" />
+                                <h3>Wolves</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen3.html" class="thumbnail">
+                                <img style="margin: 10px" height="50px" src="images/treat.jpeg" alt="" />
+                                <h3>Treat You Better</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,395 @@
+:root {
+    --logo: #ff00d4;
+    --light1: #ffffff;
+    --light2: #b3b3b3;
+    --light3: #585757;
+    --dark1: #011018;
+    --dark2: #152027;
+    --primary1: rgb(157, 28, 231);
+    --primary2: rgb(118, 9, 190);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(240, 244, 245);
+    overflow: hidden;
+}
+
+.brdr {
+    border: 2px solid white;
+}
+
+
+/* ***************************custom scrollbar */
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #000507;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(124, 123, 123);
+    border-radius: 15px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #414040;
+}
+
+
+/**************************************** Header */
+
+#logo-text {
+    font-family: 'Merienda', cursive;
+    font-weight: 700;
+    color: var(--logo);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #011018;
+    color: white;
+    margin: 0;
+    position: sticky;
+    top: 0;
+}
+
+header a {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Logo */
+
+header .logo {
+    width: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20%;
+    margin: 5px 15px;
+}
+
+.logo-wrap {
+    width: 245px;
+}
+
+.logo-wrap h2 {
+    letter-spacing: 3px;
+    font-size: 27px;
+}
+
+
+/* Search bar */
+
+.buttons input {
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+    margin: auto 20px;
+    border-radius: 70px;
+    border: none;
+    outline: none;
+    width: 400px;
+}
+
+
+/* Login Buttons */
+
+button:hover {
+    cursor: pointer;
+}
+
+header .buttons {
+    margin-left: auto;
+    display: flex;
+}
+
+.buttons a {
+    margin: 12px;
+    margin-left: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.login {
+    color: white;
+    background-color: rgb(41, 187, 89);
+}
+
+.login:hover {
+    background-color: rgb(43, 150, 43);
+}
+
+.signup {
+    background-color: rgb(14, 157, 182);
+    color: white;
+}
+
+.signup:hover {
+    background-color: rgb(15, 156, 156);
+}
+
+.skip {
+    background-color: var(--light1);
+    color: var(--primary1);
+}
+
+.skip:hover {
+    background-color: var(--primary1);
+    color: var(--light1);
+}
+
+.profile {
+    border-radius: 55px;
+    background-color: var(--dark2);
+    cursor: pointer;
+}
+
+.profile img {
+    height: 45px;
+}
+
+.profile p {
+    font-size: 17px;
+    margin: 15px;
+}
+
+.upside-down {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    background-color: white;
+    z-index: 100;
+    position: absolute;
+    display: none;
+    width: 90%;
+}
+
+.dropdown a {
+    padding: 5px;
+    color: black;
+}
+
+.visible {
+    display: flex !important;
+}
+
+
+/* ****************************main page */
+
+main {
+    display: flex;
+    background-color: #152027;
+    color: white;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* general styles */
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ****************************sidebar */
+
+.sidebar {
+    background-color: #011018;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sidebar a:hover {
+    background-color: #062e44;
+}
+
+.sidebar a.selected {
+    background-color: #032436;
+}
+
+
+/* ************main page 2 */
+
+.content {
+    overflow-y: scroll;
+    height: 91vh;
+}
+
+
+/************ Welcome banner */
+
+.welcome {
+    padding: 20px;
+    margin: 0 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 94%;
+    margin-top: 20px;
+    border-radius: 8px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome h2,
+.welcome h3 {
+    margin: 5px;
+}
+
+
+/* **************Songs */
+
+.all-songs {
+    margin-left: 20px;
+    min-height: 45vh;
+}
+
+.cat-title {
+    margin-left: 15px;
+    margin-top: 50px;
+}
+
+
+/* ***********************thumbnails */
+
+.thumbnail-wrap {
+    display: flex;
+}
+
+.thumbnail-wrap li {
+    transition: all 0.2s;
+}
+
+.thumbnail-wrap li:hover {
+    transform: scale(1.05);
+}
+
+.thumbnail {
+    background-color: #020f16;
+    width: 180px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    /* align-items: center; */
+    border-radius: 5px;
+    list-style: none;
+    margin: 0 15px;
+}
+
+.thumbnail h5 {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.thumbnail h3 {
+    margin-bottom: 0;
+}
+
+.thumbnail img {
+    object-fit: cover;
+    height: 175px;
+    border-radius: 5px;
+}
+
+.thumbnail h3 {
+    padding: 0 10px;
+}
+
+
+/* ***************footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    bottom: 0;
+    margin-top: 100px;
+    width: 100%;
+    background-color: #000507;
+}
+
+footer h3 {
+    font-size: 22px;
+}
+
+footer h4 {
+    width: 100%;
+    font-weight: 300;
+    background-color: black;
+    padding: 5px 0;
+}
+
+footer .icons i {
+    font-size: 30px;
+    margin: 10px;
+    transition: all 0.6s;
+}
+
+i.fa-twitter:hover {
+    color: #00acee;
+    transform: rotate(360deg);
+}
+
+i.fa-facebook-f:hover {
+    color: #2f5fc0;
+    transform: rotate(360deg);
+}
+
+i.fa-instagram:hover {
+    color: #E1306C;
+    transform: rotate(360deg);
+}

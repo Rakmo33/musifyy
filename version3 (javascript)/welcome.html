@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="assets/images/logo.jpg" type="image/icon type">
+    <title>Musifyy | Welcome</title>
+    <link rel="stylesheet" href="assets/css/homepage.css">
+    <link rel="stylesheet" href="assets/css/welcome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <a href="welcome.html" class="logo-wrap">
+            <img class="logo" src="assets/images/logo.jpg" alt="" />
+            <h2 id="logo-text">MUSIFYY</h2>
+        </a>
+        <div class="buttons">
+            <a class="skip" href="homepage.html">
+                    Skip Login
+                </a>
+        </div>
+    </header>
+    <main>
+        <section class="content wc ">
+            <div class="form-wrap ">
+                <div class="welcome-msg">
+                    <h2>
+                        Welcome to
+                        <div id="logo-text-2">
+                            <span id="m">m</span>
+                            <span id="u">u</span>
+                            <span id="s">s</span>
+                            <span id="i">i</span>
+                            <span id="f">f</span>
+                            <span id="y">y</span>
+                            <span id="y2">y</span>
+                        </div>
+                    </h2>
+                    <h3>
+                        The best music streaming app <br> where you can enjoy your favourite songs
+                    </h3>
+                </div>
+                <div class="login-form">
+                    <form class="login-form-front" name="login" action="homepage.html" method="GET" onsubmit="return authenticate()">
+                        <div id="login-msg">
+                            <h1 style="text-align: center;">Login </h1>
+                            <!-- <h4> to personalize your music experience</h4> -->
+                        </div>
+                        <div class="form-input">
+                            <label for="login-username">Username</label>
+                            <input placeholder="Your cool name goes here..." autocomplete="off" class="" type="text" id="login-username" name="login-username">
+                            <span id="login-usernameError"></span>
+                        </div>
+                        <div class="form-input">
+                            <label for="login-password">Password</label>
+                            <input type="password" placeholder="Make sure nobody is looking ;)" autocomplete="off" id="login-password" name="login-password" class="password">
+                            <span id="login-passwordError"></span>
+                            <div class="showCheck">
+                                <input type="checkbox" name="showPass" class="eye" value="Show password"></input>
+                                <label for="showPass">Show Password</label>
+                            </div>
+                        </div>
+                        <button>Get Started</button>
+                        <span id="signup-link">Don't have an account?  <a>Sign Up</a></span>
+                    </form>
+                    <form class="login-form-back rotate" name="signup" action="homepage.html" method="GET" onsubmit="return validateForm()">
+                        <div id="login-msg">
+                            <h1 style="text-align: center;">Sign up</h1>
+                            <!-- <h4> & be a part of amazing music journey</h4> -->
+                        </div>
+                        <div class="form-input">
+                            <label for="username">Username</label>
+                            <input onkeyup="validateUsername()" placeholder="Your cool name goes here..." autocomplete="off" class="" type="text" id="username" name="username">
+                            <span id="usernameError"></span>
+                        </div>
+
+                        <div class="form-input">
+                            <label for="email">Email</label>
+                            <input onkeyup="validateEmail()" class="" placeholder="We won't spam your mail..." autocomplete="off" type="text" id="email" name="email">
+                            <span id="emailError"></span>
+                        </div>
+
+                        <div class="form-input">
+                            <label for="password">Password</label>
+                            <input onkeyup="validatePassword()" type="password" placeholder="Make sure nobody is looking ;)" autocomplete="off" id="password" name="password" class="password">
+
+                            <span id="passwordError"></span>
+                            <div class="showCheck">
+                                <input type="checkbox" name="showPass" class="eye" value="Show password"></input>
+                                <label for="showPass">Show Password</label>
+                            </div>
+                        </div>
+                        <button>Register</button>
+                        <span id="signup-link">Already have an account?  <a>Login</a></span>
+                    </form>
+                </div>
+            </div>
+
+            <footer class="wc">
+                <h3>Follow us </h3>
+                <div class="icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h4>Created by Omkar Dabir</h4>
+            </footer>
+        </section>
+    </main>
+    <script src="assets/js/welcome.js"></script>
+</body>
+
+</html>

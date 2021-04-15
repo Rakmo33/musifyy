@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Musifyy | Homepage</title>
+</head>
+<style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        border: 2px solid black;
+    }
+    
+    header a {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    header .logo {
+        width: 30px;
+        object-fit: fill;
+        object-position: center;
+        border-radius: 20%;
+        margin: 5px 15px;
+    }
+    
+    .logo-wrap {
+        border-right: 4px solid black;
+        width: 245px;
+    }
+    
+    header .buttons {
+        margin-left: auto;
+    }
+    
+    .buttons button {
+        margin: 12px;
+        margin-left: 0;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    
+    .buttons input {
+        padding: 10px;
+        font-size: 15px;
+        margin: auto 20px;
+        width: 400px;
+    }
+    
+    button:hover {
+        cursor: pointer;
+    }
+    
+    .sidebar {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sidebar a {
+        margin: 20px;
+    }
+    
+    .thumbnail-wrap {
+        display: flex;
+    }
+    
+    .thumbnail {
+        background-color: grey;
+        width: 140px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+        list-style: none;
+        margin: 0 15px;
+    }
+    
+    .content {
+        padding: 20px;
+        border: 2px solid black;
+    }
+    
+    .welcome {
+        padding: 10px;
+        text-align: left;
+    }
+</style>
+
+<body>
+    <header>
+        <a href="homepage.html" class="logo-wrap">
+            <img class="logo" src="logo.jpg" alt="image" />
+
+            <h2>MUSIFYY</h2>
+        </a>
+        <div class="buttons">
+            <input type="text" name="search" id="search" placeholder="Search a song..." />
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
+        </div>
+    </header>
+
+    <main style="display: flex">
+        <section class="sidebar" style="width: 300px">
+            <a href="homepage.html">Home</a>
+            <a href="#">Recently played</a>
+            <a href="#">Playlists</a>
+            <a href="#">Search</a>
+        </section>
+
+        <section class="content" style="width: 100%">
+            <div class="welcome" style="background-color: rgba(0, 0, 0, 0.9); width: fit-content">
+                <h2 style="width: fit-content; margin: 5px; color: white">
+                    Welcome to Musifyy!
+                </h2>
+                <h3 style="width: fit-content; margin: 5px; color: white">
+                    The best music streaming app where you can enjoy your favourite songs!
+                </h3>
+            </div>
+
+            <h2>Categories</h2>
+
+            <ul style="width: 200px;">
+                <li>
+                    <h3>Genres :</h3>
+                    <ul class="thumbnail-wrap">
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="images/pop.jpg" alt="image" />
+                                <h3>Pop music</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="images/hiphop.jpg" alt="image" />
+                                <h3>Hip Hop</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="images/edm.jpg" alt="image" />
+                                <h3>Electonic Dance Music</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="images/hiphop.jpg" alt="image" />
+                                <h3>Rap Music</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="images/bolly.jpg" alt="image" />
+                                <h3>Bollywood</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="images/classical.jpg" alt="image" />
+                                <h3>Indian Classical</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Artists :</h3>
+                    <ul class="thumbnail-wrap">
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="images/arijit.jpg" alt="image" />
+                                <h3>Arijit Singh</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="images/charlie.jpeg" alt="image" />
+                                <h3>Charlie Puth</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="images/asha.jpg" alt="image" />
+                                <h3>Asha Bhosale</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="images/selena.jpeg" alt="image" />
+                                <h3>Selena Gomez</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Languages :</h3>
+                    <ul class="thumbnail-wrap">
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="logo.jpg" alt="image" />
+                                <h3>English</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="logo.jpg" alt="image" />
+                                <h3>Hindi</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="logo.jpg" alt="image" />
+                                <h3>Marathi</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="screen2.html" class="thumbnail">
+                                <img style="margin: auto" height="150px" width="130px" src="logo.jpg" alt="image" />
+                                <h3>Bhojpuri</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="assets/images/logo.jpg" type="image/icon type">
+    <title>Musifyy | Recently Played</title>
+    <link rel="stylesheet" href="assets/css/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <a href="homepage.html" class="logo-wrap">
+            <img class="logo" src="assets/images/logo.jpg" alt="" />
+            <h2 id="logo-text">MUSIFYY</h2>
+        </a>
+        <div class="buttons">
+            <input type="text" name="search" id="search" placeholder="Search a song..." />
+
+            <div style="position: relative;">
+                <a class="profile">
+                    <img src="assets/images/avatar.png" alt="">
+                    <p> Omkar </p>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown">
+                    <a href="welcome.php">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="sidebar">
+            <a href="homepage.html">Home</a>
+            <a class="selected" href="recent.html">Recently played</a>
+            <a href="playlist.html">Playlists</a>
+            <a href="search.html">Search</a>
+        </section>
+
+        <section class="content">
+
+            <ul class="all-songs">
+                <li>
+                    <h3 class="cat-title">Recently Played Songs:</h3>
+                    <ul class="thumbnail-wrap">
+                        <li>
+                            <a href="songs.html" class="thumbnail">
+                                <img height="50px" src="assets/images/perfect.jpg" alt="" />
+                                <h3>Perfect</h3>
+                                <h5>Ed Sheeran</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="thumbnail">
+                                <img height="50px" src="assets/images/attention.png" alt="" />
+                                <h3>Attention</h3>
+                                <h5>Charlie Puth</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="thumbnail">
+                                <img height="50px" src="assets/images/wolves.jpeg" alt="" />
+                                <h3>Wolves</h3>
+                                <h5>Selena Gomez</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="thumbnail">
+                                <img height="50px" src="assets/images/treat.jpeg" alt="" />
+                                <h3>Treat You Better</h3>
+                                <h5>Shawn Mendes</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <footer>
+                <h3>Follow us </h3>
+
+                <div class="icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+
+                <h4>Created by Omkar Dabir</h4>
+            </footer>
+        </section>
+
+    </main>
+
+    <script src="assets/js/homepage.js"></script>
+</body>
+
+</html>

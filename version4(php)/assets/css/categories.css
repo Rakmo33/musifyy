@@ -1,0 +1,24 @@
+.category-wrap {
+    padding: 40px;
+    display: flex;
+}
+
+.category-wrap img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.category-wrap .info {
+    margin: 0 30px;
+}
+
+.category-wrap .info h1 {
+    margin-top: 0;
+    font-size: 40px;
+}
+
+.category-wrap .info p {
+    width: 700px;
+    text-align: justify;
+}

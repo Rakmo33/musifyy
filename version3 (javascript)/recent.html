@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="assets/images/logo.jpg" type="image/icon type">
+    <title>Musifyy | Recently Played</title>
+    <link rel="stylesheet" href="assets/css/homepage.css">
+    <link rel="stylesheet" href="assets/css/categories.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <a href="homepage.html" class="logo-wrap">
+            <img class="logo" src="assets/images/logo.jpg" alt="" />
+            <h2 id="logo-text">MUSIFYY</h2>
+        </a>
+        <div class="buttons">
+            <form class="search-wrap" id="searchbar">
+                <input type="text" name="search" id="search" placeholder="Search a song..." />
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            <div style="position: relative;">
+                <a class="profile">
+                    <img src="assets/images/avatar.png" alt="">
+                    <p> Omkar </p>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown">
+                    <a href="welcome.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="sidebar">
+            <a href="homepage.html"><i class="fas fa-home"></i>Home</a>
+            <a class="selected" href="recent.html"><i class="far fa-clock"></i>Recently played</a>
+            <a href="playlist.html"><i class="fas fa-list-ul"></i>Playlists</a>
+            <a href="search.html"><i class="fas fa-search"></i>Search</a>
+        </section>
+
+        <section class="content">
+
+            <ul class="all-songs">
+                <li>
+                    <h2 class="cat-title">Recently Played Songs :</h2>
+                    <ul class="table-wrap">
+                        <li>
+                            <a href="songs.html" class="table-row">
+                                <img src="assets/images/perfect.jpg" alt="" />
+                                <h3>Perfect</h3>
+                                <h5>Ed Sheeran</h5>
+                                <h5>02 : 55</h5>
+                                <h5>03-03-2017</h5>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="table-row">
+                                <img src="assets/images/attention.png" alt="" />
+                                <h3>Attention</h3>
+                                <h5>Charlie Puth</h5>
+                                <h5>03 : 51</h5>
+                                <h5>24-04-2017</h5>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="table-row">
+                                <img src="assets/images/wolves.jpeg" alt="" />
+                                <h3>Wolves</h3>
+                                <h5>Selena Gomez</h5>
+                                <h5>03 : 32</h5>
+                                <h5>18-11-2018</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="table-row">
+                                <img src="assets/images/treat.jpeg" alt="" />
+                                <h3>Treat You Better</h3>
+                                <h5>Shawn Mendes</h5>
+                                <h5>04 : 16</h5>
+                                <h5>12-07-2016</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+
+            <footer>
+                <h3>Follow us </h3>
+
+                <div class="icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+
+                <h4>Created by Omkar Dabir</h4>
+            </footer>
+        </section>
+
+    </main>
+
+    <script src="assets/js/homepage.js"></script>
+</body>
+
+</html>

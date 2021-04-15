@@ -1,0 +1,58 @@
+.content {
+    overflow: scroll;
+}
+
+.category-wrap {
+    padding: 40px;
+    display: flex;
+}
+
+.category-wrap img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.category-wrap .info {
+    margin: 0 30px;
+}
+
+.lyrics {
+    margin: 50px;
+    background-color: #011018;
+    padding: 20px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.lyrics p {
+    line-height: 23px;
+    text-align: justify;
+}
+
+.category-wrap .info h1 {
+    margin-top: 0;
+    font-size: 40px;
+}
+
+.category-wrap .info p {
+    width: 500px;
+    text-align: justify;
+}
+
+.category-wrap .info li {
+    margin: 5px;
+}
+
+.category-wrap .info li img {
+    height: 50px;
+    margin-left: 20px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+audio {
+    margin-left: 50px;
+    width: 1200px;
+}

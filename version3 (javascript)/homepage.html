@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="assets/images/logo.jpg" type="image/icon type">
+    <title>Musifyy | Home</title>
+    <link rel="stylesheet" href="assets/css/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <a href="homepage.html" class="logo-wrap">
+            <img class="logo" src="assets/images/logo.jpg" alt="" />
+            <h2 id="logo-text">MUSIFYY</h2>
+        </a>
+        <div class="buttons">
+            <form class="search-wrap" id="searchbar">
+                <input type="text" name="search" id="search" placeholder="Search a song..." />
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            <a href="welcome.html" class="login loginBtn ">Login</a>
+            <a href="welcome.html#signup" class="signup signupBtn">Sign Up</a>
+            <div style="position: relative;" class="profile-wrap">
+                <a class="profile">
+                    <img src="assets/images/avatar.png" alt="">
+                    <p> Omkar </p>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown">
+                    <a href="welcome.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="sidebar">
+            <a class="selected" href="homepage.html"><i class="fas fa-home"></i>Home</a>
+            <a href="recent.html"><i class="far fa-clock"></i>Recently played</a>
+            <a href="playlist.html"><i class="fas fa-list-ul"></i>Playlists</a>
+            <a href="search.html"><i class="fas fa-search"></i>Search</a>
+        </section>
+
+        <section class="content">
+
+            <ul class="all-songs">
+                <li>
+                    <h2 class="cat-title">Suggested For You</h2>
+                    <button id="p1" class="previous"><i class="fas fa-chevron-left"></i></button>
+
+                    <ul class="thumbnail-wrap " id="list1">
+                        <li>
+                            <a href="songs.html" class="thumbnail">
+                                <img height="150px" src="assets/images/perfect.jpg" alt="" />
+                                <h3>Perfect</h3>
+                                <h5>Ed Sheeran</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="songs.html" class="thumbnail">
+                                <img height="150px" src="assets/images/faded.jpg" alt="" />
+                                <h3>Faded</h3>
+                                <h5>Alan Walker</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="songs.html" class="thumbnail">
+                                <img height="150px" src="assets/images/despacito.jpg" alt="" />
+                                <h3>Despacito</h3>
+                                <h5>Luis Fonsi </h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="songs.html" class="thumbnail">
+                                <img height="150px" src="assets/images/closer.jpg" alt="" />
+                                <h3>Closer</h3>
+                                <h5>The Chainsmokers </h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="songs.html" class="thumbnail">
+                                <img height="150px" src="assets/images/blank.jpg" alt="" />
+                                <h3>Blank Space</h3>
+                                <h5>Taylor Swift </h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="songs.html" class="thumbnail">
+                                <img height="150px" src="assets/images/wolves.jpeg" alt="" />
+                                <h3>Wolves</h3>
+                                <h5>Selena gomez</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="songs.html" class="thumbnail">
+                                <img height="150px" src="assets/images/hello.jpeg" alt="" />
+                                <h3>Hello</h3>
+                                <h5>Adele </h5>
+                            </a>
+                        </li>
+                    </ul>
+                    <button id="n1" class="next"><i class="fas fa-chevron-right"></i></button>
+                </li>
+                <hr>
+                <li>
+                    <h2 class="cat-title">Based on Genres</h2>
+                    <button class="previous" id="p2"><i class="fas fa-chevron-left"></i></button>
+
+                    <ul class="thumbnail-wrap " id="list2">
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/pop.jpg" alt="" />
+                                <h3>Pop music</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/edm.jpg" alt="" />
+                                <h3>Electonic Dance Music</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/hiphop.jpg" alt="" />
+                                <h3>Rap Music</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/jazz.jpg" alt="" />
+                                <h3>Jazz Music</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/romantic.jpg" alt="" />
+                                <h3>Romantic Music</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/bolly.jpg" alt="" />
+                                <h3>Bollywood</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/classical.jpg" alt="" />
+                                <h3>Indian Classical</h3>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/metal.jpeg" alt="" />
+                                <h3>Metal Music</h3>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <button class="next" id="n2"><i class="fas fa-chevron-right"></i></button>
+
+                </li>
+                <hr>
+                <li>
+                    <h2 class="cat-title">Best of Artists </h2>
+                    <button class="previous" id="p3"><i class="fas fa-chevron-left"></i></button>
+
+                    <ul class="thumbnail-wrap" id="list3">
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/arijit.jpg" alt="" />
+                                <h3>Arijit Singh</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/charlie.jpeg" alt="" />
+                                <h3>Charlie Puth</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/krsna.jpg" alt="" />
+                                <h3>KR$NA</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/selena.jpeg" alt="" />
+                                <h3>Selena Gomez</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/neha.jpg" alt="" />
+                                <h3>Neha Kakkar</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/shawn.jpg" alt="" />
+                                <h3>Shawn Mendes</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/alan.jpeg" alt="" />
+                                <h3>Alan Walker</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="thumbnail">
+                                <img height="150px" src="assets/images/raftaar.jpeg" alt="" />
+                                <h3>Raftaar</h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="next" id="n3"><i class="fas fa-chevron-right"></i></button>
+
+                </li>
+
+
+            </ul>
+            <footer>
+                <h3>Follow us </h3>
+
+                <div class="icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+
+                <h4>Created by Omkar Dabir</h4>
+            </footer>
+        </section>
+
+    </main>
+
+    <script src="assets/js/homepage.js"></script>
+</body>
+
+</html>
